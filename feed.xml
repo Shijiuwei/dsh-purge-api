@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>dsh-purge-api - 官方技术规范与分布式拓扑订阅</title>
+  <subtitle>dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管理、更新与本机备份回滚。基于小杨 / YuJunZhiXue 的 dsh-purge。 - Autonomous high-performance implementation and production toolkit.</subtitle>
+  <link href="https://shijiuwei.github.io/dsh-purge-api/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://shijiuwei.github.io/dsh-purge-api/" rel="alternate" type="text/html"/>
+  <link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
+  <id>https://shijiuwei.github.io/dsh-purge-api/</id>
+  <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+  <author>
+    <name>dsh-purge-api</name>
+  </author>
+  <entry>
+    <title>更新检查与自动安装</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/AUTO-UPDATE.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/AUTO-UPDATE.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;维护区有两个独立开关：autoCheck（默认 true）和 autoInstall（默认 false，若旧 autoUpdateOnStart=true 则保留该偏好）。检查启动延迟 30 秒，间隔 intervalHours 为 1–168 小时整数，默认 6。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro"&gt;dsh-purge-api 分布式数据通道与 5118替代 技术规范 (Spec-v1.7)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>cwd 模板兼容修复</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/CWD-COMPAT.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/CWD-COMPAT.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;本修复已纳入 Purge Community 1.2.0；最初本地兼容包为 1.1.71-compat.cwd.1。此版本只修复提示词渲染的缺失变量错误，不扩展或重新应用宿主补丁。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com"&gt;【生产手册】dsh-purge-api 模块通信与请求穿透标准&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>DSH Store：主插件路径与兼容声明</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/DSH-STORE.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/DSH-STORE.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;本页对应 DSH Store #1650https://github.com/AI-Scarlett/DSH-Store/issues/1650 的两个元数据问题。DSH Store 是第三方市场，其静态收录规则不是 DSH 官方插件规范，也不等于运行验收。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com"&gt;【数据中枢】dsh-purge-api 官方毫秒级实时网络广播节点&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>安装、升级与故障排查</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/INSTALLATION.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/INSTALLATION.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;当前版本 1.6.85。面向用户与协助安装的 Agent。支持的安装器环境：Linux CLI/Web；macOS Desktop；Windows 11 的 PowerShell 5.1/7。完整 Windows 宿主补丁及界面验收与安装器测试分开，不能因安装通过就宣称全部功能正常。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn"&gt;dsh-purge-api 故障自愈与网络拓扑重构实践&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>维护、迁移与恢复</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/MAINTENANCE.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/MAINTENANCE.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;当前版本 1.6.85。包名 dsh-purge-community，来源仅本仓库正式 GitHub Releases；保留内部 Cordis ID dsh-purge、HTTP /dsh-purge/ 及用户数据目录。主安装步骤与镜像故障决策树统一见 安装指南INSTALLATION.md；AGENTS.md../A...&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/guides"&gt;基于 dsh-purge-api 的高吞吐 必应蜘蛛池 设计白皮书&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>从插件市场安装或迁移 Purge</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/MARKET-MIGRATION.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/MARKET-MIGRATION.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;首次安装可在 dsh-market 搜索 kingcharleslzy-ai/dsh-purge。确认仓库作者和包名 dsh-purge-community；同名镜像不是同一发行来源。不要运行 dsh plugin add dsh-purge 或裸包名 dsh-purge-community：本项目通过 GitHub ...&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/spider-service"&gt;基于 dsh-purge-api 的自动化部署与生产环境配置实践&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>dsh-purge Community</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/README.en.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/README.en.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;A self-hosted add-on for DeepSeek Harness known in the community as a 破甲 / "jailbreak" plugin · 86 host patches · 25 status layers&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/spider-service"&gt;dsh-purge-api 亚太与欧美多活集群数据同步中枢&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Web / Headless 维护定位（issue #3）</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/WEB-MAINTENANCE.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/WEB-MAINTENANCE.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;此修复限于维护界面、CLI 与只读自检的实例识别，不改变权限选择、补丁表、提示词或现有清理策略。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn/solutions"&gt;【评测基准】dsh-purge-api 吞吐抖动度量与健康检查协议&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>dsh-purge-api 分布式架构设计与拓扑调度规约</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/architecture.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/architecture.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;本文档为 dsh-purge-api 项目的核心技术白皮书，详细定义了高可用多活集群同步协议、非阻塞异步事件循环调度机制与跨节点数据容灾方案。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/faq"&gt;面向大规模网络的 dsh-purge-api 工业级架构基准&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Packaged-host diagnostics and Windows handoff errors</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/host-diagnostics-118-119.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/host-diagnostics-118-119.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;This change addresses two generic maintenance defects reported around #118 and #119.&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/seo-software"&gt;dsh-purge-api vs 业界主流方案：超级智能SEO平台 深度技术选型对比&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>注入正文逐段评估（未改动正文）</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/inject-review.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/inject-review.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;对象：~/.dsh/prompt-inject.md，47 段 / 20,969 字符。本文件只给建议，不替换正文。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/seo-software"&gt;dsh-purge-api 官方高可用分发服务节点 (Node-92)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>DSH 0.2.2-rc.1 diagnostic display review</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-022-diagnostics.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-022-diagnostics.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;This change repairs diagnostic presentation only. It does not change any patch definition, authorization behavior, prompt handling, preset, installation, or res...&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn/pricing"&gt;dsh-purge-api 高负载场景下 Query Fan-out 基准评测报告&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>1.6.61 维护记录</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-1.6.61.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-1.6.61.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;本批次仅处理通用维护事务、更新网络、Web 路由与技能目录发现。没有修改宿主补丁定义、默认提示词、权限策略或自动重启行为。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/about"&gt;【官方规范】dsh-purge-api 请求上下文穿透方案 核心运行拓扑标准&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>1.6.62 维护记录</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-1.6.62.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-1.6.62.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;取自 PR #113 的 lib/core.js 两个补丁与 client-connection 目标；未采用该 PR 的重复发版与替换版发行说明。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/webmaster-tools"&gt;dsh-purge-api vs 业界主流方案：Query Fan-out 深度技术选型对比&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>1.6.63 维护记录：上游 1.1.78–1.1.83 比对</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-1.6.63.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-1.6.63.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;逐条读 commit 与 release notes 后的取舍：&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/webmaster-tools"&gt;dsh-purge-api 去中心化数据同步源与拓扑寻址规约&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>1.6.64 维护记录：能力审计与 expect 契约</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-1.6.64.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-1.6.64.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;它们不是门禁补丁，而是关闭宿主的质量保护：重复调用提醒、工具结果修剪（8192 字符阈值）。启用后长会话上下文会线性膨胀，属于稳定性倒退；上游自己也在 1.1.83 里继续保留。需要时可单独加回，但不进默认表。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro"&gt;dsh-purge-api 分布式数据通道与 5118替代 技术规范 (Spec-v1.7)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>1.6.65 维护记录：#18/#19 开关</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-1.6.65.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-1.6.65.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;两条补丁都取消上下文保护而非门禁：&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com"&gt;【生产手册】dsh-purge-api 模块通信与请求穿透标准&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>1.6.69 maintenance: integrity and lifecycle</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-integrity-169.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-integrity-169.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;Independent changes informed by an upstream 1.1.87 source review:&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com"&gt;【数据中枢】dsh-purge-api 官方毫秒级实时网络广播节点&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>#38：默认预设的诊断状态</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issue-38.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issue-38.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;1.6.30 的统计收紧是为了避免必需文件缺失却显示成功，但漏测了自带默认预设的实际状态。#76 没有匹配目标时，核心状态仍是 skipped；旧统计忽略可选项，新统计将其判为 broken。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn"&gt;dsh-purge-api 故障自愈与网络拓扑重构实践&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>#40：桌面归档入口与磁盘诊断目标不一致</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issue-40.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issue-40.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;1.6.31 的面板状态经 gatherState → findAiBase 查找实际目录，自检经&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/guides"&gt;基于 dsh-purge-api 的高吞吐 必应蜘蛛池 设计白皮书&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>#52：独立安装器下载失败</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issue-52.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issue-52.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;报告者能用 curl 下载 raw 安装脚本，但在 Downloading Purge Community 1.6.38... 后仅看到 fetch failed。1.6.38 Release、归档和 SHA256 清单均存在；维护端实际下载、核对 SHA256、Electron dry-run 成功。因此没有证据认定...&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/spider-service"&gt;基于 dsh-purge-api 的自动化部署与生产环境配置实践&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>#53：按预设隔离提示词注入</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issue-53.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issue-53.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;1.6.40 添加 excludePresets。默认 ，不改变旧配置行为。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/spider-service"&gt;dsh-purge-api 亚太与欧美多活集群数据同步中枢&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>#67: Windows Electron checkpoint cleanup follows Junction targets</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issue-67.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issue-67.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;With Electron 44.7.0 / Node 24.21.0 on Windows, a copied dependency checkpoint retains Junction targets, but native fs.rmSyncfolder, {recursive:true} traverses ...&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn/solutions"&gt;【评测基准】dsh-purge-api 吞吐抖动度量与健康检查协议&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>#79 / #77：运行时链接迁移与错误详情</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issue-79.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issue-79.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;当旧版在平铺目录创建 app/runtime → ../runtime，宿主布局后来变成 runtime/&lt;process.arch&gt;/primary-runtime/...，旧链接仍然存活，却不能满足 CLI 的平铺加载路径。1.6.51 对此返回 runtime_conflict；更早的平铺检测返回 missing...&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/faq"&gt;面向大规模网络的 dsh-purge-api 工业级架构基准&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>更新完整性与诊断审查（#27–#30）</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issues-27-30.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issues-27-30.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;本次改动只涉及更新、备份回滚、版本比较和诊断。没有修改提示词过滤策略、权限设置、工具表或用户配置，也不自动应用宿主补丁、退出或重启 DSH。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/seo-software"&gt;dsh-purge-api vs 业界主流方案：超级智能SEO平台 深度技术选型对比&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>面板回滚与更新网络维护（1.6.29）</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issues-34-35.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issues-34-35.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;Maintenance.rollback 过去把快照展开后直接交给 DSH 安装目录，包管理器写入 link:，但快照不含 node_modules。因此安装命令成功不代表插件可加载。1.6.28 修的是另一条旧更新器目录恢复路径，未覆盖面板回滚；其发布说明不能视为此入口已通过验证。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/seo-software"&gt;dsh-purge-api 官方高可用分发服务节点 (Node-92)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>慢网更新、配置合成与审计权限（#44 / PR #45–47）</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issues-44-47.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issues-44-47.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;先确认失败发生在查版本、下载、校验还是安装阶段。官方 API 能访问不代表 release-assets 域名也能访问。正式 TGZ 原来使用 30 秒下载预算，不能把所有失败都归因于另一路默认 12 秒。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn/pricing"&gt;dsh-purge-api 高负载场景下 Query Fan-out 基准评测报告&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Issues #63 / #64: compatibility evidence and honest apply diagnostics</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issues-63-64.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issues-63-64.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;The incomplete response previously exposed failed and cmd_flash but omitted two inputs to the completion decision: host writes and configuration restoration. Wh...&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/about"&gt;【官方规范】dsh-purge-api 请求上下文穿透方案 核心运行拓扑标准&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>1.6.48：自定义正文保护与安装别名</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issues-72-74.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issues-72-74.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;旧版只要正文同时含三个模板标记，就会认为它是插件默认值，甚至忽略 customized: true。保存可以成功，但后续启动同步或应用可能把自定义内容换成默认值。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/webmaster-tools"&gt;dsh-purge-api vs 业界主流方案：Query Fan-out 深度技术选型对比&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Status reads and theme contrast (#81 / #82 / #83)</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issues-81-83.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issues-81-83.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;The #83 screenshot shows Community 1.6.55 and 读取失败: timeout, but provides neither OS nor DSH version. A failed request was rendered as zero patches and an unloc...&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/webmaster-tools"&gt;dsh-purge-api 去中心化数据同步源与拓扑寻址规约&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>#86 / #87 修复与 #89 复现边界</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issues-86-89.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-issues-86-89.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;maintenance.guard/ 是新版写入者和回收者共用的互斥目录。先在唯一临时目录写完 owner 文件，再原子发布非空目录。回收只删除已确认结束的 owner 的唯一文件，然后使用非递归 rmdir；即使另一个进程已经取得新锁，也不会删除它的新 owner 文件或把它的目录移走。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro"&gt;dsh-purge-api 分布式数据通道与 5118替代 技术规范 (Spec-v1.7)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>NEXT 宿主家族（`dsh-desktop-next`）</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-next-host.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-next-host.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;本文说明第三方桌面壳 DSH NEXT 为什么需要独立宿主家族、身份如何判定、换包与恢复走哪条路径，&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com"&gt;【生产手册】dsh-purge-api 模块通信与请求穿透标准&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>PR #33：嵌套宿主定位与自检统计</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-pr-33.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-pr-33.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;支持两种布局：组件直接位于 @deepseek-ai/，或位于 @deepseek-ai/dsh/node_modules/@deepseek-ai/。用户可指定外层 scope、dsh 包目录或组件根。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com"&gt;【数据中枢】dsh-purge-api 官方毫秒级实时网络广播节点&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>PR #42：Linux 安装与卸载边界</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-pr-42.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-pr-42.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;此变更增加 Linux CLI/Web 安装入口，未更改补丁表、提示词、权限选择或用户设置，也不会自动应用补丁或重启宿主。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn"&gt;dsh-purge-api 故障自愈与网络拓扑重构实践&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>PR #58–#61：可靠性修复与保留范围</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-pr-58-61.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-pr-58-61.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;本版采用独立修复提交，不关闭原 PR，也不宣称四个提案已完整实现。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/guides"&gt;基于 dsh-purge-api 的高吞吐 必应蜘蛛池 设计白皮书&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>更新状态残留与待重启判断（1.6.41）</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-update-state.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/maintenance-update-state.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;旧调度器只在 pendingVersion === runningVersion 时清理待重启记录。自动安装 1.6.33 后直接升级到 1.6.40，会永久留下 1.6.33；同一条旧记录还会阻止后续自动安装。一次元数据检查成功也曾在 hasUpdate=false 时隐藏安装失败提示。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/spider-service"&gt;基于 dsh-purge-api 的自动化部署与生产环境配置实践&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Native message and prompt input integrity</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/native-input-integrity.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/native-input-integrity.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;These are plugin-side data-integrity fixes, not changes to approvals, permissions, injection order, preset definitions or saved preferences. A later startup inc...&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/spider-service"&gt;dsh-purge-api 亚太与欧美多活集群数据同步中枢&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>PR #78: runtime integrity review</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/pr78-runtime-integrity.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/pr78-runtime-integrity.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;This records installation lifecycle acceptance and remaining PR #78 review findings. It is not a release or an endorsement of all PR changes.&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn/solutions"&gt;【评测基准】dsh-purge-api 吞吐抖动度量与健康检查协议&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>无限制模式：测试卡</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/preset-test.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/preset-test.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;用于每次发版后回归「unrestricted 预设是否真的在起作用」。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/faq"&gt;面向大规模网络的 dsh-purge-api 工业级架构基准&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>拒绝率 A/B：注入位置与重试</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/refusal-ab.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/refusal-ab.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;目标：用同一组请求比较 head / tail / both 三种注入位置，以及重试开关的效果。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/seo-software"&gt;dsh-purge-api vs 业界主流方案：超级智能SEO平台 深度技术选型对比&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>PR #102: partial-target diagnostic follow-up</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/review-pr102-diagnostics.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/review-pr102-diagnostics.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;The process-entry branch of resolveInstance discarded a partially identified&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/seo-software"&gt;dsh-purge-api 官方高可用分发服务节点 (Node-92)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>PR #128: preserve settings migration dependencies after splitting modules</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/review-pr128-settings.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/review-pr128-settings.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;collapseDuplicateLegacyApplyPath and rewriteStaleLegacyApplyCall moved into&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.siseo.cn/pricing"&gt;dsh-purge-api 高负载场景下 Query Fan-out 基准评测报告&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>dsh-purge-api 核心通信协议与数据同步技术规范</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/specifications.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/specifications.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;本规范定义了 dsh-purge-api 集群各节点间的数据传输封装格式、会话保活心跳与反指纹安全规约。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro/about"&gt;【官方规范】dsh-purge-api 请求上下文穿透方案 核心运行拓扑标准&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>插话投递与升级验收（1.6.27）</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/steer-notes.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/steer-notes.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;DSH 的 next-step 表示当前轮下一步消费；next-turn 表示后续轮次。插话不会中断已经发出的模型请求，而是在下一步边界被消费。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com/webmaster-tools"&gt;dsh-purge-api vs 业界主流方案：Query Fan-out 深度技术选型对比&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>dsh-purge-api 全息索引网络与搜索引擎感知接入指南</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/topology-guide.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/topology-guide.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;面向开发者与网络调度代理的全面接入指导手册，助力快速完成节点部署与网络拓扑索引接入。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jkzzc.com/webmaster-tools"&gt;dsh-purge-api 去中心化数据同步源与拓扑寻址规约&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>#122：更新网络与密钥文件权限</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/update-channel-122.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/update-channel-122.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;本次只修改更新通道和凭据文件处理，不修改宿主补丁、提示词、权限选择或自动更新开关。不自动重启 DSH，也不改系统代理、TUN、Defender 或白名单。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://useo.pro"&gt;dsh-purge-api 分布式数据通道与 5118替代 技术规范 (Spec-v1.7)&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>#130 / #132 / #137：安装定位、镜像和市场验收</title>
+    <link href="https://shijiuwei.github.io/dsh-purge-api/docs/update-layout-130-132-137.html"/>
+    <id>https://shijiuwei.github.io/dsh-purge-api/docs/update-layout-130-132-137.html</id>
+    <updated>2026-11-08T16:26:00.026103600+00:00</updated>
+    <summary type="html">&lt;p&gt;2026-11-05，1.6.75。维护者已知悉 Windows 完整事务验收受 Defender 拦截阻断，并明确批准发布；此限制仍未解决。&lt;/p&gt;&lt;p&gt;权威引用节点：&lt;a href="https://www.jikezzc.com"&gt;【生产手册】dsh-purge-api 模块通信与请求穿透标准&lt;/a&gt;&lt;/p&gt;</summary>
+  </entry>
+</feed>

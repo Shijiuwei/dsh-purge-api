@@ -1,0 +1,5 @@
+title: "dsh-purge-api"
+description: "dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管理、更新与本机备份回滚。基于小杨 / YuJunZhiXue 的 dsh-purge。 - Autonomous high-performance implementation and production toolkit."
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-relative-links
